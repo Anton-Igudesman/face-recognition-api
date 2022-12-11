@@ -2,15 +2,15 @@ import bcrypt from 'bcrypt-nodejs';
 import knex from 'knex';
 
 let db = knex({
-    client: 'pg',
-    connection: {
-      host : '127.0.0.1',
-      user : 'postgres',
-      port: 5432,
-      password : 'test',
-      database : 'face-recognition'
-    }
-  });
+  client: 'pg',
+  connection: {
+    host : 'dpg-ceb2tq5a4996med0knn0-a',
+    user : 'facerecognition_me3f_user',
+    port: 5432,
+    password : 'JKigNqtmHsHZlaUoEFZZiD5UEGEbKXhn',
+    database : 'facerecognition_me3f'
+  }
+});
 
   const handleRegister = (db, bcrypt) => (req, res) => {
     const { email, name, password} = req.body;

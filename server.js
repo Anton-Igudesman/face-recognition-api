@@ -12,11 +12,11 @@ import {handleImage, handleAPICall} from './controllers/image.js'
 let db = knex({
     client: 'pg',
     connection: {
-      host : '127.0.0.1',
-      user : 'postgres',
+      host : 'dpg-ceb2tq5a4996med0knn0-a',
+      user : 'facerecognition_me3f_user',
       port: 5432,
-      password : 'test',
-      database : 'face-recognition'
+      password : 'JKigNqtmHsHZlaUoEFZZiD5UEGEbKXhn',
+      database : 'facerecognition_me3f'
     }
   });
 
