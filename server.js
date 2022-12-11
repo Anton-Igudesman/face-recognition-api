@@ -7,7 +7,7 @@ import handleRegister from './controllers/register.js'
 import handleSignIn from './controllers/signin.js'
 import handleGetProfile from './controllers/profile.js'
 import {handleImage, handleAPICall} from './controllers/image.js'
-//import handleAPICall from './controllers/image.js'
+
 
 let db = knex({
     client: 'pg',
@@ -43,12 +43,9 @@ app.put('/image', handleImage(db))
 
 app.post('/imageurl', handleAPICall)
 
-
-
-app.listen(3000, () => {
-    console.log('app is running on port 3000')
+app.listen(process.env.PORT || 3000, () => {
+    console.log(`app is running on port ${process.env.PORT}`)
 })
 
 
-console.log(process.env)
 
